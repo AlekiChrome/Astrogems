@@ -1,13 +1,20 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 const gemstones = [
-    {name: "", zodiac: "", properties: "", },
-    {name: "", zodiac: "", properties: "", },
-    {name: "", zodiac: "", properties: "", },
-    {name: "", zodiac: "", properties: "", },
-    {name: "", zodiac: "", properties: "", }
+    {name: "Garnet", zodiac: "Capricorn", properties: "", },
+    {name: "Amethyst", zodiac: "Aquarius", properties: "", },
+    {name: "Aquamarine", zodiac: "Pisces", properties: "", },
+    {name: "Diamond", zodiac: "Aries", properties: "", },
+    {name: "Emerald", zodiac: "Taurus", properties: "", },
+    {name: "Pearl", zodiac: "Gemini", properties: "", },
+    {name: "Ruby", zodiac: "Cancer", properties: "", },
+    {name: "Periodt", zodiac: "Leo", properties: "", },
+    {name: "Sapphire", zodiac: "Virgo", properties: "", },
+    {name: "opal", zodiac: "Libra", properties: "", },
+    {name: "Citrine", zodiac: "Scorpio", properties: "", },
+    {name: "Blue Topaz", zodiac: "Sagittarius", properties: "", }
 ];
 
 app.get('/api/gemstones', (req, res) => {
