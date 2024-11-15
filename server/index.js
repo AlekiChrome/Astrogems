@@ -3,18 +3,18 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 const gemstones = [
-    {name: "Garnet", zodiac: "Capricorn", properties: "", },
-    {name: "Amethyst", zodiac: "Aquarius", properties: "", },
-    {name: "Aquamarine", zodiac: "Pisces", properties: "", },
-    {name: "Diamond", zodiac: "Aries", properties: "", },
-    {name: "Emerald", zodiac: "Taurus", properties: "", },
-    {name: "Pearl", zodiac: "Gemini", properties: "", },
-    {name: "Ruby", zodiac: "Cancer", properties: "", },
-    {name: "Periodt", zodiac: "Leo", properties: "", },
-    {name: "Sapphire", zodiac: "Virgo", properties: "", },
-    {name: "opal", zodiac: "Libra", properties: "", },
-    {name: "Citrine", zodiac: "Scorpio", properties: "", },
-    {name: "Blue Topaz", zodiac: "Sagittarius", properties: "", }
+    {name: "Garnet", zodiac: "Capricorn", properties: "", imageUrl: "" },
+    {name: "Amethyst", zodiac: "Aquarius", properties: "", imageUrl: "" },
+    {name: "Aquamarine", zodiac: "Pisces", properties: "", imageUrl: ""},
+    {name: "Diamond", zodiac: "Aries", properties: "", imageUrl: ""},
+    {name: "Emerald", zodiac: "Taurus", properties: "", imageUrl: ""},
+    {name: "Pearl", zodiac: "Gemini", properties: "", imageUrl: ""},
+    {name: "Ruby", zodiac: "Cancer", properties: "", imageUrl: ""},
+    {name: "Periodt", zodiac: "Leo", properties: "", imageUrl: ""},
+    {name: "Sapphire", zodiac: "Virgo", properties: "", imageUrl: ""},
+    {name: "opal", zodiac: "Libra", properties: "", imageUrl: ""},
+    {name: "Citrine", zodiac: "Scorpio", properties: "", imageUrl: ""},
+    {name: "Blue Topaz", zodiac: "Sagittarius", properties: "", imageUrl: ""}
 ];
 
 app.get('/api/gemstones', (req, res) => {
